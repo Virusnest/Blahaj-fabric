@@ -16,6 +16,7 @@ import hibi.blahaj.CuddlyItem;
 
 @Mixin(PlayerEntityRenderer.class)
 public class PlayerEntityRendererMixin {
+
 	@Inject(
 		method = "getArmPose(Lnet/minecraft/client/network/AbstractClientPlayerEntity;Lnet/minecraft/util/Hand;)Lnet/minecraft/client/render/entity/model/BipedEntityModel$ArmPose;",
 		at = @At("TAIL"),

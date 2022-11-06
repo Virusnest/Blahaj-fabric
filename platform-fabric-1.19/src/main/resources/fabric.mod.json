@@ -1,4 +1,5 @@
 {
+  "schemaVersion": 1,
   "id": "blahaj",
   "version": "${version}",
   "name": "Blåhaj",
@@ -14,21 +15,22 @@
   },
   "license": "Unlicense",
   "icon": "assets/blahaj/icon.png",
+  "environment": "*",
   "entrypoints": {
     "main": [
       "hibi.blahaj.Common"
     ]
   },
   "depends": {
-      "fabricloader" : ">=0.14.9",
-      "fabric-resource-loader-v0": "*",
-      "fabric-registry-sync-v0": "*",
-      "fabric-api": "*",
-      "minecraft": "~1.19",
-      "java": ">=17"
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
   },
   "mixins": [
     "blahaj.mixins.json"
   ],
-  "schemaVersion": 1
+  "suggests": {
+    "another-mod": "*"
+  }
 }
